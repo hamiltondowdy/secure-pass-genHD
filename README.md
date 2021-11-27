@@ -1,2 +1,5 @@
 # secure-pass-genHD
-Application built to generate a secure password using Javascript, HTML, and CSS
+
+## Secure Password Generator
+
+Application built to generate a password to secure sensitive data using Javascript, HTML, and CSS.
