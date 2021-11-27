@@ -18,9 +18,9 @@ THEN the password is either displayed in an alert or written to the page */
 // Write function to generate password
 const characterCats = {
 specialArr: ['!', '"', '#', '$', '%', '&', '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', ']', '[', '\', ^', '_', '`', '{', '|', '}', '~'],
-lowercaseArr:['z', 'a', 'q', 'x', 's', 'w', 'c', 'd', 'e', 'v', 'f', 'r', 'b', 'g', 't', 'n', 'h', 'y', 'm', 'j', 'u', 'k', 'i', 'l', 'o', 'p'],
-uppercaseArr:['L', 'K', 'J', 'H', 'G', 'F', 'D', 'S', 'A', 'M', 'N', 'B', 'V', 'C', 'X', 'Z', 'P', 'O', 'I', 'U', 'Y', 'T', 'R', 'E', 'W', 'Q'],
-numericArr:['0', '9', '7', '3', '1', '6', '8', '4', '2', '5'],
+lowercaseArr: ['z', 'a', 'q', 'x', 's', 'w', 'c', 'd', 'e', 'v', 'f', 'r', 'b', 'g', 't', 'n', 'h', 'y', 'm', 'j', 'u', 'k', 'i', 'l', 'o', 'p'],
+uppercaseArr: ['L', 'K', 'J', 'H', 'G', 'F', 'D', 'S', 'A', 'M', 'N', 'B', 'V', 'C', 'X', 'Z', 'P', 'O', 'I', 'U', 'Y', 'T', 'R', 'E', 'W', 'Q'],
+numericArr: ['0', '9', '7', '3', '1', '6', '8', '4', '2', '5'],
 }
 
 function passwordLength () {
@@ -47,16 +47,16 @@ function chooseCharTypes () {
     chooseCharTypes();
   } else {
     if (upperCase) {
-      viableChars += uppercaseArr('')
+      viableChars += characterCats.uppercaseArr.join('')
     }
     if (lowerCase) {
-      viableChars += characterCats.lowercaseArr('')
+      viableChars += characterCats.lowercaseArr.join('')
     }
     if (numberCase) { 
-      viableChars += characterCats.numericArr('')
+      viableChars += characterCats.numericArr.join('')
   }
     if (specialCase) { 
-      viableChars += characterCats.specialArr('')
+      viableChars += characterCats.specialArr.join('')
     }
 
 
